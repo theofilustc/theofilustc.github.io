@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+.header-wrapper .content-wrapper {
+  -ms-grid-columns: (max-content)[2];
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrapper .content-wrapper .logo-wrapper .logo {
+  font-family: var(--font-family-one);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-wrapper .content-wrapper .logo-wrapper .logo span {
+  font-family: var(--font-family-two);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-wrapper .content-wrapper .main-navigation {
+  text-align: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  grid-column-gap: 50px;
+}
+
+.header-wrapper .content-wrapper .main-navigation a {
+  color: var(--color-main);
+  font-size: 13px;
+}
+
+.banner-home {
+  background-image: url("/img/banner-home.jpeg");
+  height: 1000px;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner-home .content-wrapper .banner-title {
+  text-align: center;
+  font-size: 75px;
+  font-family: var(--font-family-one);
+  padding-top: 20px;
+  font-weight: 600;
+  line-height: 1.1em;
+  margin-bottom: 26px;
+}
+
+.banner-home .content-wrapper .arrow-down-wrapper {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.section-treatment .row-wrapper .content-wrapper {
+  text-align: center;
+}
+
+.section-treatment .row-wrapper .content-wrapper .row-title {
+  font-size: 50px;
+  font-family: var(--font-family-one);
+  margin-bottom: 23px;
+  line-height: 1em;
+}
+
+.section-treatment .row-wrapper .content-wrapper .content {
+  font-size: 13px;
+  color: var(--color-dark);
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.section-treatment .row-1 {
+  padding: 160px 0px;
+}
+
+.section-treatment .row-1 .content-wrapper {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .title-content-wrapper {
+  padding: 140px 0px;
+  width: 404px;
+  margin: 0 auto;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .button-load-more-wrapper {
+  padding-top: 140px;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .button-load-more-wrapper .btn-load-more {
+  color: var(--color-main);
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid var(--color-main);
+  padding: 81px 52.165px;
+  border-radius: 50%;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  position: absolute;
+  left: 35%;
+  bottom: -30%;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .button-load-more-wrapper .btn-load-more:hover {
+  background-color: var(--color-main);
+  color: var(--color-light);
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .image-wrapper {
+  width: 386px;
+  height: 492px;
+  margin: 0 auto;
+}
+
+.section-treatment .row-1 .content-wrapper .col-2 .image-wrapper {
+  width: 530px;
+  height: 920px;
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */
