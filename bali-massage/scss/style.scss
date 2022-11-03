@@ -24,13 +24,14 @@ body {
             }
         }
 
-        .main-navigation{
+        .main-navigation {
             text-align: right;
             display: grid;
             grid-template-columns: repeat(3, max-content);
             justify-content: end;
             grid-column-gap: 50px;
-            a{
+
+            a {
                 color: var(--color-main);
                 font-size: 13px;
             }
@@ -68,13 +69,7 @@ body {
     .row-wrapper {
         .content-wrapper {
             text-align: center;
-
-            .row-title {
-                font-size: 50px;
-                font-family: var(--font-family-one);
-                margin-bottom: 23px;
-                line-height: 1em;
-            }
+            width: 75%;
 
             .content {
                 font-size: 13px;
@@ -91,7 +86,6 @@ body {
 
         .content-wrapper {
             grid-template-columns: repeat(2, 1fr);
-            width: 75%;
 
             .col-1 {
                 .title-content-wrapper {
@@ -104,22 +98,9 @@ body {
                     padding-top: 140px;
 
                     .btn-load-more {
-                        color: var(--color-main);
-                        font-size: 13px;
-                        text-decoration: none;
-                        border: 1px solid var(--color-main);
-                        padding: 81px 52.165px;
-                        border-radius: 50%;
-                        transition: all .4s ease 0s;
                         position: absolute;
                         left: 35%;
                         bottom: -30%;
-
-                        &:hover {
-                            background-color: var(--color-main);
-                            color: var(--color-light);
-                            transition: all .4s ease 0s;
-                        }
                     }
                 }
 
@@ -139,4 +120,75 @@ body {
             }
         }
     }
+
+    .row-2 {
+        .row-title-content {
+            text-align: right;
+            padding-bottom: 195px;
+
+            .content {
+                width: 520px;
+                margin-left: auto;
+            }
+        }
+
+        .row-image {
+            .row-content-wrapper {
+                grid-template-columns: 720px 200px;
+                justify-content: space-between;
+
+                .col-image {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .image-wrapper {
+                        width: 327px;
+                        height: 600px;
+                    }
+                }
+
+                .col-button {
+                    .button-load-more-wrapper.btn-treat-2 {
+                        padding-top: 81px;
+
+                        .btn-circle {
+                            padding: 81px 30.48px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.section-opening-hours {
+    padding-top: 170px;
+    .content-wrapper {
+        background-image: url('/bali-massage/img/bg-working-hour.jpeg');
+        margin-right: 0;
+        min-height: 590px;
+        background-size: cover;
+        align-content: center;
+
+        .row-wrapper {
+            width: 600px;
+            margin-left: 120px;
+            .row-title-wrapper {
+                padding-bottom: 50px;
+            }
+
+            .row-content {
+                grid-template-columns: repeat(3, 1fr);
+                .working-day{
+                    font-family: var(--font-family-one);
+                    font-size: 25px;
+                    margin-bottom: 25px;
+                }
+                .working-hour{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
 }

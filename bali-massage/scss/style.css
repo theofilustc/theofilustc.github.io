@@ -70,13 +70,7 @@ body {
 
 .section-treatment .row-wrapper .content-wrapper {
   text-align: center;
-}
-
-.section-treatment .row-wrapper .content-wrapper .row-title {
-  font-size: 50px;
-  font-family: var(--font-family-one);
-  margin-bottom: 23px;
-  line-height: 1em;
+  width: 75%;
 }
 
 .section-treatment .row-wrapper .content-wrapper .content {
@@ -93,7 +87,6 @@ body {
 .section-treatment .row-1 .content-wrapper {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  width: 75%;
 }
 
 .section-treatment .row-1 .content-wrapper .col-1 .title-content-wrapper {
@@ -107,24 +100,9 @@ body {
 }
 
 .section-treatment .row-1 .content-wrapper .col-1 .button-load-more-wrapper .btn-load-more {
-  color: var(--color-main);
-  font-size: 13px;
-  text-decoration: none;
-  border: 1px solid var(--color-main);
-  padding: 81px 52.165px;
-  border-radius: 50%;
-  -webkit-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
   position: absolute;
   left: 35%;
   bottom: -30%;
-}
-
-.section-treatment .row-1 .content-wrapper .col-1 .button-load-more-wrapper .btn-load-more:hover {
-  background-color: var(--color-main);
-  color: var(--color-light);
-  -webkit-transition: all .4s ease 0s;
-  transition: all .4s ease 0s;
 }
 
 .section-treatment .row-1 .content-wrapper .col-1 .image-wrapper {
@@ -137,5 +115,78 @@ body {
   width: 530px;
   height: 920px;
   margin-left: auto;
+}
+
+.section-treatment .row-2 .row-title-content {
+  text-align: right;
+  padding-bottom: 195px;
+}
+
+.section-treatment .row-2 .row-title-content .content {
+  width: 520px;
+  margin-left: auto;
+}
+
+.section-treatment .row-2 .row-image .row-content-wrapper {
+  -ms-grid-columns: 720px 200px;
+      grid-template-columns: 720px 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-treatment .row-2 .row-image .row-content-wrapper .col-image {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.section-treatment .row-2 .row-image .row-content-wrapper .col-image .image-wrapper {
+  width: 327px;
+  height: 600px;
+}
+
+.section-treatment .row-2 .row-image .row-content-wrapper .col-button .button-load-more-wrapper.btn-treat-2 {
+  padding-top: 81px;
+}
+
+.section-treatment .row-2 .row-image .row-content-wrapper .col-button .button-load-more-wrapper.btn-treat-2 .btn-circle {
+  padding: 81px 30.48px;
+}
+
+.section-opening-hours {
+  padding-top: 170px;
+}
+
+.section-opening-hours .content-wrapper {
+  background-image: url("/bali-massage/img/bg-working-hour.jpeg");
+  margin-right: 0;
+  min-height: 590px;
+  background-size: cover;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.section-opening-hours .content-wrapper .row-wrapper {
+  width: 600px;
+  margin-left: 120px;
+}
+
+.section-opening-hours .content-wrapper .row-wrapper .row-title-wrapper {
+  padding-bottom: 50px;
+}
+
+.section-opening-hours .content-wrapper .row-wrapper .row-content {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.section-opening-hours .content-wrapper .row-wrapper .row-content .working-day {
+  font-family: var(--font-family-one);
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.section-opening-hours .content-wrapper .row-wrapper .row-content .working-hour {
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */

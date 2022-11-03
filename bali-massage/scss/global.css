@@ -47,3 +47,26 @@ img{
 .pos-absolute{
     position: absolute;
 }
+
+.btn-circle{
+    color: var(--color-main);
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid var(--color-main);
+    padding: 81px 52.165px;
+    border-radius: 50%;
+    transition: all .4s ease 0s;
+}
+
+.btn-circle:hover{
+    background-color: var(--color-main);
+    color: var(--color-light);
+    transition: all .4s ease 0s;
+}
+
+.row-title-50 {
+    font-size: 50px;
+    font-family: var(--font-family-one);
+    margin-bottom: 23px;
+    line-height: 1em;
+}
