@@ -17,9 +17,11 @@ html{
     margin: 0 auto;
 }
 
-.hamburger-icon {
+/* CSS MENU and MOBILE MENU */
+.menu-icon{
     display: none;
 }
+/* END OF CSS MENU and MOBILE MENU */
 
 .d-grid{
     display: grid;
@@ -69,4 +71,8 @@ img{
     font-family: var(--font-family-one);
     margin-bottom: 23px;
     line-height: 1em;
+}
+
+.mg-side-auto{
+    margin: 0 auto;
 }
