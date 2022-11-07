@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="scss/global.css">
     <link rel="stylesheet" href="scss/responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,8 +31,8 @@
                 </div>
 
                 <nav id="site-navigation" class="main-navigation">
-                    <a href="/bali-massage/">Home</a>
-                    <a href="/bali-massage/treatments">Treatment</a>
+                    <a class="btn-home" href="/#">Home</a>
+                    <a class="btn-treatment" href="/#">Treatment</a>
                     <a href="/bali-massage/faq">FAQ</a>
                 </nav>
 
@@ -41,8 +42,8 @@
 
                 <div class="navigation-menu mobile-menu">
                     <nav>
-                        <li><a href="/bali-massage/">Home</a></li>
-                        <li><a href="/bali-massage/treatments">Treatment</a></li>
+                        <li><a class="btn-home" href="/#">Home</a></li>
+                        <li><a class="btn-treatment" href="/#">Treatment</a></li>
                         <li><a href="/bali-massage/faq">FAQ</a></li>
                     </nav>
                 </div>
@@ -50,117 +51,131 @@
         </section>
     </header>
 
-    <section class="banner-home">
-        <div class="content-wrapper">
-            <h1 class="banner-title" id="demo">
-                WELCOME <br>
-                TO SERENITY
-            </h1>
-            <div class="arrow-down-wrapper pos-relative">
-                <a href="#section1" class="arrow-down">
-                    <svg preserveAspectRatio="none" data-bbox="35.35 35.4 496.2 496.1" viewBox="35.35 35.4 496.2 496.1"
-                        height="60" width="60" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img"
-                        aria-labelledby="svgcid--77l5qf7mdna" style="transform: rotate(180deg);">
-                        <title id="svgcid--77l5qf7mdna">Scroll down</title>
-                        <g>
-                            <path
-                                d="M458.85 108c-46.9-46.8-109.2-72.6-175.4-72.6s-128.6 25.8-175.4 72.6c-46.9 46.9-72.7 109.2-72.7 175.4 0 66.3 25.8 128.6 72.7 175.4 46.9 46.9 109.2 72.7 175.4 72.7s128.6-25.8 175.4-72.7c46.9-46.9 72.7-109.1 72.7-175.4-.1-66.2-25.9-128.5-72.7-175.4zm-3.5 347.3c-45.9 45.9-107 71.2-171.9 71.2s-126-25.3-171.9-71.2-71.2-107-71.2-171.9 25.3-126 71.2-171.9 107-71.2 171.9-71.2 126 25.3 171.9 71.2 71.2 107 71.2 171.9-25.3 126-71.2 171.9z">
-                            </path>
-                            <path d="M165.75 311.9l3.1 3.9 116.9-93.9 112.2 93.8 3.2-3.8-115.4-96.4-120 96.4z"></path>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-treatment">
-        <div class="row-wrapper row-1">
-            <div class="content-wrapper d-grid m-gr-col-single m-w-100 tbl-gr-col-single" id="section1">
-                <div class="col-1">
-                    <div class="title-content-wrapper">
-                        <h2 class="row-title-50">A CALM ESCAPE</h2>
-                        <p class="content">
-                            This is the 1st treatments. I'm a paragraph. Click here to add your own text and edit me.
-                            I’m a great place for you to tell a story and let your users know a little more about you.
-                        </p>
-                    </div>
-                    <div class="button-load-more-wrapper pos-relative ">
-                        <a href="/bali-massage/treatments" class="btn-load-more btn-circle">Learn More</a>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="/bali-massage/img/treatments-2.jpeg" alt="Treatments Image">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="image-wrapper">
-                        <img src="/bali-massage/img/treatments-1.jpeg" alt="Treatments Image">
-                    </div>
+    <div class="page-home active">
+        <section class="banner-home">
+            <div class="content-wrapper">
+                <h1 class="banner-title" id="demo">
+                    WELCOME <br>
+                    TO SERENITY
+                </h1>
+                <div class="arrow-down-wrapper pos-relative">
+                    <a href="#section1" class="arrow-down">
+                        <svg preserveAspectRatio="none" data-bbox="35.35 35.4 496.2 496.1"
+                            viewBox="35.35 35.4 496.2 496.1" height="60" width="60" xmlns="http://www.w3.org/2000/svg"
+                            data-type="shape" role="img" aria-labelledby="svgcid--77l5qf7mdna"
+                            style="transform: rotate(180deg);">
+                            <title id="svgcid--77l5qf7mdna">Scroll down</title>
+                            <g>
+                                <path
+                                    d="M458.85 108c-46.9-46.8-109.2-72.6-175.4-72.6s-128.6 25.8-175.4 72.6c-46.9 46.9-72.7 109.2-72.7 175.4 0 66.3 25.8 128.6 72.7 175.4 46.9 46.9 109.2 72.7 175.4 72.7s128.6-25.8 175.4-72.7c46.9-46.9 72.7-109.1 72.7-175.4-.1-66.2-25.9-128.5-72.7-175.4zm-3.5 347.3c-45.9 45.9-107 71.2-171.9 71.2s-126-25.3-171.9-71.2-71.2-107-71.2-171.9 25.3-126 71.2-171.9 107-71.2 171.9-71.2 126 25.3 171.9 71.2 71.2 107 71.2 171.9-25.3 126-71.2 171.9z">
+                                </path>
+                                <path d="M165.75 311.9l3.1 3.9 116.9-93.9 112.2 93.8 3.2-3.8-115.4-96.4-120 96.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row-wrapper row-2">
-            <div class="content-wrapper m-w-100">
-                <div class="row-title-content m-w-90 mg-side-auto">
-                    <h2 class="row-title-50 m-row-title-30">PEACEFUL SURROUNDINGS</h2>
-                    <p class="content">
-                        This is the 2nd treatment. I'm a paragraph. Click here to add your own text and edit me. I’m a
-                        great place for you to tell a story and let your users know a little more about you.
-                    </p>
-                </div>
-                <div class="row-image">
-                    <div class="row-content-wrapper m-w-100 d-grid m-gr-col-single">
-                        <div class="col-image d-grid m-gr-col-single">
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(max-width: 420px)" srcset="/bali-massage/img/treatment-2a-mobile.jpeg"
-                                        alt="Treatment image 2">
-                                    <img src="/bali-massage/img/treatment-2a.jpeg" alt="Treatment image 2">
-                                </picture>
-                            </div>
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(max-width: 420px)" srcset="/bali-massage/img/treatment-2b-mobile.jpeg"
-                                        alt="Treatment image 2">
-                                    <img src="/bali-massage/img/treatment-2b.jpeg" alt="Treatment image 2">
-                                </picture>
-                            </div>
+        <section class="section-treatment">
+            <div class="row-wrapper row-1">
+                <div class="content-wrapper d-grid m-gr-col-single m-w-100 tbl-gr-col-single tbl-w-100" id="section1">
+                    <div class="col-1 tbl-w-90 mg-side-auto">
+                        <div class="title-content-wrapper">
+                            <h2 class="row-title-50">A CALM ESCAPE</h2>
+                            <p class="content">
+                                This is the 1st treatments. I'm a paragraph. Click here to add your own text and edit
+                                me.
+                                I’m a great place for you to tell a story and let your users know a little more about
+                                you.
+                            </p>
                         </div>
-                        <div class="col-button">
-                            <div class="button-load-more-wrapper pos-relative btn-treat-2">
-                                <a href="/bali-massage/treatments" class="btn-load-more btn-circle">Book a Treatment</a>
-                            </div>
+                        <div class="button-load-more-wrapper pos-relative ">
+                            <a href="/#" class="btn-load-more btn-circle btn-treatment">Learn More</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-opening-hours">
-        <div class="content-wrapper m-w-100 mg-side-auto content-float-right d-grid">
-            <div class="row-wrapper m-w-90">
-                <div class="row-title-wrapper">
-                    <h2 class="row-title-50 m-row-title-30">OPENING HOURS</h2>
-                </div>
-                <div class="row-content d-grid m-gr-col-single">
-                    <div class="col-1">
-                        <h3 class="working-day">Monday - Friday</h3>
-                        <p class="working-hour">7am - 10pm</p>
+                        <div class="image-wrapper">
+                            <img src="/bali-massage/img/treatments-2.jpeg" alt="Treatments Image">
+                        </div>
                     </div>
                     <div class="col-2">
-                        <h3 class="working-day">Saturday</h3>
-                        <p class="working-hour">8am - 10pm</p>
-                    </div>
-                    <div class="col-3">
-                        <h3 class="working-day">Sunday</h3>
-                        <p class="working-hour">8am - 11pm</p>
+                        <div class="image-wrapper">
+                            <img src="/bali-massage/img/treatments-1.jpeg" alt="Treatments Image">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <div class="row-wrapper row-2">
+                <div class="content-wrapper m-w-100">
+                    <div class="row-title-content m-w-90 mg-side-auto">
+                        <h2 class="row-title-50 m-row-title-30">PEACEFUL SURROUNDINGS</h2>
+                        <p class="content">
+                            This is the 2nd treatment. I'm a paragraph. Click here to add your own text and edit me. I’m
+                            a
+                            great place for you to tell a story and let your users know a little more about you.
+                        </p>
+                    </div>
+                    <div class="row-image">
+                        <div class="row-content-wrapper m-w-100 d-grid m-gr-col-single">
+                            <div class="col-image d-grid m-gr-col-single">
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(max-width: 420px)"
+                                            srcset="/bali-massage/img/treatment-2a-mobile.jpeg" alt="Treatment image 2">
+                                        <img src="/bali-massage/img/treatment-2a.jpeg" alt="Treatment image 2">
+                                    </picture>
+                                </div>
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(max-width: 420px)"
+                                            srcset="/bali-massage/img/treatment-2b-mobile.jpeg" alt="Treatment image 2">
+                                        <img src="/bali-massage/img/treatment-2b.jpeg" alt="Treatment image 2">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="col-button">
+                                <div class="button-load-more-wrapper pos-relative btn-treat-2">
+                                    <a href="/bali-massage/treatments" class="btn-load-more btn-circle">Book a
+                                        Treatment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-opening-hours">
+            <div class="content-wrapper m-w-100 mg-side-auto content-float-right d-grid">
+                <div class="row-wrapper m-w-90">
+                    <div class="row-title-wrapper">
+                        <h2 class="row-title-50 m-row-title-30">OPENING HOURS</h2>
+                    </div>
+                    <div class="row-content d-grid m-gr-col-single">
+                        <div class="col-1">
+                            <h3 class="working-day">Monday - Friday</h3>
+                            <p class="working-hour">7am - 10pm</p>
+                        </div>
+                        <div class="col-2">
+                            <h3 class="working-day">Saturday</h3>
+                            <p class="working-hour">8am - 10pm</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 class="working-day">Sunday</h3>
+                            <p class="working-hour">8am - 11pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="page-treatment">
+        <h1>
+            TREATMENT PAGE
+        </h1>
+    </div>
 
 </body>
 <!-- <script src="js/navigation.js"></script> -->
@@ -170,6 +185,18 @@
         $(".navigation-menu").toggleClass("active");
         $(".fa").toggleClass("fa-times");
         $(".fa").toggleClass("fa-bars");
+    });
+
+    $(".btn-home").click(function () {
+        $(this).toggleClass("active");
+        $(".page-home").toggleClass("active");
+        $(".page-treatment").toggleClass("active");
+    });
+
+    $(".btn-treatment").click(function () {
+        $(this).toggleClass("active");
+        $(".page-home").toggleClass("active");
+        $(".page-treatment").toggleClass("active");
     });
 </script>
 

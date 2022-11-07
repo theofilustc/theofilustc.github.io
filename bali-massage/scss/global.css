@@ -18,7 +18,7 @@ html{
 }
 
 /* CSS MENU and MOBILE MENU */
-.menu-icon{
+.menu-icon, .mobile-menu{
     display: none;
 }
 /* END OF CSS MENU and MOBILE MENU */
@@ -75,4 +75,20 @@ img{
 
 .mg-side-auto{
     margin: 0 auto;
+}
+
+.page-home, .page-treatment{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.page-home.active, .page-treatment.active{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all 1s linear;
 }
