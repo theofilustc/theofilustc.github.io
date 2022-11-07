@@ -21,6 +21,10 @@ html{
 .menu-icon, .mobile-menu{
     display: none;
 }
+
+.navigation-menu a, .main-navigation a{
+    cursor: pointer;
+}
 /* END OF CSS MENU and MOBILE MENU */
 
 .d-grid{
