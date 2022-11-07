@@ -75,7 +75,6 @@
     <footer id="footer"></footer>
 
 </body>
-<!-- <script src="js/navigation.js"></script> -->
 <script>
     $(function () {
         $("#footer").load("footer.html");
@@ -93,16 +92,13 @@
     });
 
     $(".btn-home").click(function () {
-        $(this).toggleClass("active");
         $(".page-home").css("display", "block");
         $(".page-treatment").css("display", "none");
     });
 
     $(".btn-treatment").click(function () {
-        $(this).toggleClass("active");
         $(".page-treatment").css("display", "block");
         $(".page-home").css("display", "none");
     });
 </script>
-
 </html>
