@@ -36,14 +36,14 @@
                     <a href="/bali-massage/faq">FAQ</a>
                 </nav>
 
-                <div class="menu-icon">
+                <div class="menu-icon btn-mobile-menu">
                     <i class="fa fa-bars"></i>
                 </div>
 
                 <div class="navigation-menu mobile-menu">
                     <nav>
-                        <li><a class="btn-home">Home</a></li>
-                        <li><a class="btn-treatment">Treatment</a></li>
+                        <li><a class="btn-home btn-mobile-menu">Home</a></li>
+                        <li><a class="btn-treatment btn-mobile-menu">Treatment</a></li>
                         <li><a href="/bali-massage/faq">FAQ</a></li>
                     </nav>
                 </div>
@@ -180,7 +180,7 @@
 </body>
 <!-- <script src="js/navigation.js"></script> -->
 <script>
-    $(".menu-icon").click(function () {
+     $(".btn-mobile-menu").click(function(){
         $(this).toggleClass("active");
         $(".navigation-menu").toggleClass("active");
         $(".fa").toggleClass("fa-times");
