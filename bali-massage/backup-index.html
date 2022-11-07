@@ -32,9 +32,9 @@
                 </div>
 
                 <nav id="site-navigation" class="main-navigation">
-                    <a class="btn-home" href="">Home</a>
-                    <a class="btn-treatment" href="">Treatment</a>
-                    <a href="">FAQ</a>
+                    <a class="btn-home" href="/#">Home</a>
+                    <a class="btn-treatment" href="/#">Treatment</a>
+                    <a href="/faq">FAQ</a>
                 </nav>
 
                 <div class="menu-icon btn-mobile-menu">
@@ -43,9 +43,9 @@
 
                 <div class="navigation-menu mobile-menu">
                     <nav>
-                        <li><a class="btn-home btn-mobile-menu" href="">Home</a></li>
-                        <li><a class="btn-treatment btn-mobile-menu" href="">Treatment</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a class="btn-home btn-mobile-menu" href="/#">Home</a></li>
+                        <li><a class="btn-treatment btn-mobile-menu" href="/#">Treatment</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                     </nav>
                 </div>
 
@@ -68,9 +68,11 @@
         </section>
     </header>
 
-    <div class="page-home" id="page-home"></div>
+    <div class="body-page" id="body-page"></div>
 
-    <div class="page-treatment" id="page-treatment"></div>
+    <!-- <div class="page-home" id="page-home"></div>
+
+    <div class="page-treatment" id="page-treatment"></div> -->
 
     <footer id="footer"></footer>
 
@@ -79,10 +81,7 @@
 <script>
     $(function () {
         $("#footer").load("footer.html");
-        // $("#page-home").load("homepage.html");
-        $("#page-home").load("treatments.html");
-        $("#page-treatment").load("treatments.html");
-        $(".page-home").css("display", "block");
+        $("#footer-treatment").load("footer.html");
     });
 
     $(".btn-mobile-menu").click(function () {
@@ -95,13 +94,21 @@
     $(".btn-home").click(function () {
         $(this).toggleClass("active");
         $(".page-home").css("display", "block");
+        $(".page-home").css("opacity", "1");
         $(".page-treatment").css("display", "none");
+        $(".page-treatment").css("opacity", "0");
+        // $(".page-home").toggleClass("active");
+        // $(".page-treatment").toggleClass("active");
     });
 
     $(".btn-treatment").click(function () {
         $(this).toggleClass("active");
         $(".page-treatment").css("display", "block");
+        $(".page-treatment").css("opacity", "1");
         $(".page-home").css("display", "none");
+        $(".page-home").css("opacity", "0");
+        // $(".page-home").toggleClass("active");
+        // $(".page-treatment").toggleClass("active");
     });
 </script>
 

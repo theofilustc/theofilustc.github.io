@@ -6,6 +6,11 @@
     --color-light: #fff;
 }
 
+::selection {
+    color: var(--color-light)!important;
+    background: var(--color-main)!important;
+  }
+
 html{
     color: var(--color-main);
     font-family: var(--font-family-two);
@@ -20,10 +25,6 @@ html{
 /* CSS MENU and MOBILE MENU */
 .menu-icon, .mobile-menu{
     display: none;
-}
-
-.navigation-menu a, .main-navigation a{
-    cursor: pointer;
 }
 /* END OF CSS MENU and MOBILE MENU */
 
@@ -75,6 +76,7 @@ img{
     font-family: var(--font-family-one);
     margin-bottom: 23px;
     line-height: 1em;
+    font-weight: 500;
 }
 
 .mg-side-auto{
@@ -82,17 +84,48 @@ img{
 }
 
 .page-home, .page-treatment{
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden; */
+    opacity: 1;
+    display: none;
+    transition: all 1s linear;
 }
 
 .page-home.active, .page-treatment.active{
-    visibility: visible;
+    /* visibility: visible; */
     opacity: 1;
+    display: block;
     position: absolute;
     top: 120px;
     left: 0;
     right: 0;
     width: 100%;
     transition: all 1s linear;
+}
+
+.w-75{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.w-65{
+    width: 75%;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.content{
+    font-size: 13px;
+    color: var(--color-dark);
+    margin: 0;
+    line-height: 1.6em;
+}
+
+.grid-double-max-content{
+    grid-template-columns: repeat(2, max-content);
+}
+
+.justify-between{
+    justify-content: space-between;
 }

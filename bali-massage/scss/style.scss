@@ -39,6 +39,7 @@ body {
     }
 }
 
+// Homepage
 .banner-home {
     background-image: url('/bali-massage/img/banner-home.jpeg');
     height: 1000px;
@@ -163,6 +164,7 @@ body {
 
 .section-opening-hours {
     padding-top: 170px;
+
     .content-wrapper {
         background-image: url('/bali-massage/img/bg-working-hour.jpeg');
         margin-right: 0;
@@ -173,22 +175,213 @@ body {
         .row-wrapper {
             width: 600px;
             margin-left: 120px;
+
             .row-title-wrapper {
                 padding-bottom: 50px;
             }
 
             .row-content {
                 grid-template-columns: repeat(3, 1fr);
-                .working-day{
+
+                .working-day {
                     font-family: var(--font-family-one);
                     font-size: 25px;
                     margin-bottom: 25px;
                 }
-                .working-hour{
+
+                .working-hour {
                     font-size: 13px;
                 }
             }
         }
     }
 
+}
+
+.section-location {
+    .content-wrapper {
+        .row-wrapper {
+            padding: 130px 0px;
+
+            .row-title-wrapper {
+                margin-bottom: 100px;
+
+                .row-title {
+                    margin-bottom: 30px;
+                }
+
+                .content {}
+            }
+
+            .row-content {
+                row-gap: 20px;
+
+                .image-wrapper {
+                    width: 510px;
+                    height: 701px;
+                }
+            }
+        }
+    }
+}
+
+// Treatment Page
+.section-treatment {
+    .content-wrapper {
+        .row-wrapper {
+            .row-title {
+                padding: 73px 0px 20px 0px;
+            }
+
+            .content {
+                margin: 0 auto;
+                padding-bottom: 51px;
+            }
+        }
+
+        .row-treatment-item-wrapper {
+            .tab {
+                padding: 60px 0px;
+
+                .tablinks {
+                    background: var(--color-light);
+                    color: var(--color-main);
+                    border: 1px solid var(--color-main);
+                    border-radius: 100px;
+                    padding: 6px 12px;
+                    font-size: 16px;
+
+                    &.active,
+                    &:hover {
+                        background: var(--color-main);
+                        color: var(--color-light);
+                    }
+                }
+            }
+
+            .tab-content {
+                min-height: 895px;
+                .tabcontent {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 1s linear;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .treat-item-wrapper {
+                        .image-wrapper {
+                            width: 614px;
+                            height: 614px;
+                        }
+
+                        .content-wrapper {
+                            padding: 31px;
+                            width: 51%;
+
+                            .treat-title {
+                                font-size: 35px;
+                                font-family: var(--font-family-one);
+                                margin-bottom: 12px;
+                            }
+
+                            .content {
+                                padding-bottom: 0px;
+                            }
+
+                            hr {
+                                margin: 24px 0px;
+                            }
+
+                            .book {
+                                border: 1px solid var(--color-main);
+                                color: var(--color-main);
+                                font-size: 16px;
+                                border-radius: 100px;
+                                padding: 10px 25px;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 1s linear;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.section-footer {
+    background: var(--color-main);
+
+    .content-wrapper {
+        padding: 92px 0px 40px 0px;
+
+        .row-wrapper {
+            grid-template-columns: 37% 63%;
+
+            &.row-2 {
+                margin-top: 92px;
+            }
+
+            .col-item {
+                .col-title {
+                    font-size: 25px;
+                    font-family: var(--font-family-one);
+                    color: var(--color-light);
+                    font-weight: 600;
+                    padding-bottom: 38px;
+                }
+
+                nav {
+                    row-gap: 15px;
+
+                    a {
+                        color: var(--color-light) !important;
+                    }
+                }
+
+                .content {
+                    color: var(--color-light) !important;
+                }
+            }
+
+            .col-1 {
+                .brand-image {
+                    width: 76px;
+                    height: 76px;
+                    margin-bottom: 26px;
+
+                    svg {
+                        width: 76px;
+                        height: 76px;
+                        fill: var(--color-light);
+                    }
+                }
+
+                .brand-name-wrapper {
+                    .brand-name {
+                        color: var(--color-light);
+                        font-family: var(--font-family-one);
+                        font-size: 35px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .col-3-menu {
+                grid-template-columns: repeat(3, 170px);
+                column-gap: 30px;
+                margin-left: 70px;
+                font-size: 13px;
+            }
+        }
+    }
 }

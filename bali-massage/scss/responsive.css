@@ -6,6 +6,14 @@
         grid-template-columns: 1fr !important;
     }
 
+    .tbl-gr-col-duo {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .tbl-gr-col-duo-max-content {
+        grid-template-columns: repeat(2, max-content) !important;
+    }
+
     .tbl-w-100 {
         width: 100% !important;
     }
@@ -18,10 +26,10 @@
 
     /* CSS MENU and MOBILE MENU */
     .main-navigation {
-        display: none!important;
+        display: none !important;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: block;
         width: 50px;
         height: 50px;
@@ -35,11 +43,11 @@
         transform: rotate(180deg);
     }
 
-    .menu-icon:hover{
+    .menu-icon:hover {
         transform: scale(1.1);
     }
 
-    .navigation-menu{
+    .navigation-menu {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -52,18 +60,18 @@
         transition: 0.6s;
     }
 
-    .navigation-menu nav{
+    .navigation-menu nav {
         display: grid;
         text-align: center;
     }
 
-    .navigation-menu li{
+    .navigation-menu li {
         margin: 20px 0;
         overflow: hidden;
         list-style: none;
     }
 
-    .navigation-menu a{
+    .navigation-menu a {
         color: var(--color-main);
         font-size: 30px;
         font-weight: 700;
@@ -73,7 +81,7 @@
         transition: 0.6s linear;
     }
 
-    .navigation-menu a::before{
+    .navigation-menu a::before {
         content: "";
         position: absolute;
         width: 0;
@@ -84,22 +92,22 @@
         transition: 0.2s linear;
     }
 
-    .navigation-menu a:hover::before{
+    .navigation-menu a:hover::before {
         width: 100%;
     }
 
-    .menu-icon.active{
+    .menu-icon.active {
         color: var(--color-main);
         transform: rotate(180deg);
         transition: 0.2s ease;
     }
 
-    .navigation-menu.active{
+    .navigation-menu.active {
         right: 0;
         z-index: 1;
     }
 
-    .navigation-menu.active a{
+    .navigation-menu.active a {
         transform: translateX(0);
         transition: 0.6s linear;
     }
@@ -135,25 +143,27 @@
         margin: 0 auto;
         width: 100%;
     }
+
     /* End of Row 1 */
 
     /* Row 2 */
-    .section-treatment .row-2 .row-image .row-content-wrapper{
+    .section-treatment .row-2 .row-image .row-content-wrapper {
         grid-template-columns: repeat(2, max-content);
     }
 
-    .section-treatment .row-2 .row-image .row-content-wrapper .col-image{
+    .section-treatment .row-2 .row-image .row-content-wrapper .col-image {
         grid-template-columns: repeat(2, max-content);
         column-gap: 25px;
     }
 
-    .section-treatment .row-2 .row-image .row-content-wrapper .col-image .image-wrapper{
-        width: 190px!important;
+    .section-treatment .row-2 .row-image .row-content-wrapper .col-image .image-wrapper {
+        width: 190px !important;
     }
 
-    .section-treatment .row-2 .row-image .row-content-wrapper .col-button .button-load-more-wrapper.btn-treat-2{
+    .section-treatment .row-2 .row-image .row-content-wrapper .col-button .button-load-more-wrapper.btn-treat-2 {
         transform: translateX(-20px);
     }
+
     /* End of Row 2 */
     /* End of Section 1 */
 
@@ -163,10 +173,55 @@
         background-position: 58% 65%;
     }
 
-    .section-opening-hours .content-wrapper .row-wrapper{
+    .section-opening-hours .content-wrapper .row-wrapper {
         width: auto;
     }
+
     /* End of Section Opening Hours */
+
+    /* Section Location */
+    .section-location .content-wrapper .row-wrapper .row-content .image-wrapper {
+        width: 280px;
+        height: 480px;
+    }
+
+    .section-location .content-wrapper .row-wrapper .row-title-wrapper {
+        margin-bottom: 50px;
+    }
+
+    /* End of Section Location */
+
+    /* Footer */
+    .section-footer .content-wrapper .row-wrapper.row-1 .col-3-menu .col-menu {
+        display: none;
+    }
+
+    .section-footer .content-wrapper .row-wrapper .col-3-menu{
+        margin-left: 0px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper.row-2 .col-3-menu{
+        grid-row-start: 1;
+        row-gap: 15px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper.row-1{
+        row-gap: 50px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper.row-2{
+        row-gap: 15px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper.row-1 .col-1{
+        margin: 0 auto;
+    }
+
+    .section-footer .content-wrapper .row-wrapper .col-1 .brand-name-wrapper .brand-name{
+        margin-left: 30px;
+    }
+
+    /* End of Footer */
 }
 
 @media screen and (max-width: 420px) {
@@ -193,7 +248,7 @@
     /* Banner Home */
     .banner-home {
         height: 100vh;
-        background-image: url('/img/bg-banner-home-mobile.jpeg');
+        background-image: url('/bali-massage/img/bg-banner-home-mobile.jpeg');
         background-position: center;
         background-attachment: scroll;
         background-size: cover;
@@ -224,7 +279,8 @@
     .section-treatment .row-1 .content-wrapper .col-1 .image-wrapper {
         margin-top: 16px;
         grid-row-start: 2;
-        width: 209px !important;
+        /* width: 209px !important; */
+        width: 100% !important;
         height: 283px !important;
     }
 
@@ -269,7 +325,7 @@
     }
 
     .section-treatment .row-2 .row-image .row-content-wrapper .col-image .image-wrapper {
-        width: 100%;
+        width: 100% !important;
         height: 100%;
     }
 
@@ -295,9 +351,44 @@
         background-position: 62% 56%;
     }
 
-    .section-opening-hours .content-wrapper .row-wrapper{
-        margin: 0 auto!important;
+    .section-opening-hours .content-wrapper .row-wrapper {
+        margin: 0 auto !important;
     }
 
     /* End of Section Opening Hours */
+
+    /* Section Location */
+    .section-location .content-wrapper .row-wrapper .row-title-wrapper {
+        margin-bottom: 80px;
+    }
+
+    .section-location .content-wrapper .row-wrapper .row-content .image-wrapper {
+        width: 100%;
+        height: 272px;
+    }
+
+    /* End of Section Location */
+
+    /* Footer */
+    .section-footer .content-wrapper{
+        padding: 50px 0px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper .col-1 .brand-image,
+    .section-footer .content-wrapper .row-wrapper .col-1 .brand-image svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper .col-1 .brand-name-wrapper .brand-name {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .section-footer .content-wrapper .row-wrapper .col-item .col-title {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    /* End of Footer */
 }

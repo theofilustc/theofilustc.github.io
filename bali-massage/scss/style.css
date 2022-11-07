@@ -189,4 +189,172 @@ body {
 .section-opening-hours .content-wrapper .row-wrapper .row-content .working-hour {
   font-size: 13px;
 }
+
+.section-location .content-wrapper .row-wrapper {
+  padding: 130px 0px;
+}
+
+.section-location .content-wrapper .row-wrapper .row-title-wrapper {
+  margin-bottom: 100px;
+}
+
+.section-location .content-wrapper .row-wrapper .row-title-wrapper .row-title {
+  margin-bottom: 30px;
+}
+
+.section-location .content-wrapper .row-wrapper .row-content {
+  row-gap: 20px;
+}
+
+.section-location .content-wrapper .row-wrapper .row-content .image-wrapper {
+  width: 510px;
+  height: 701px;
+}
+
+.section-treatment .content-wrapper .row-wrapper .row-title {
+  padding: 73px 0px 20px 0px;
+}
+
+.section-treatment .content-wrapper .row-wrapper .content {
+  margin: 0 auto;
+  padding-bottom: 51px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab {
+  padding: 60px 0px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks {
+  background: var(--color-light);
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks.active, .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks:hover {
+  background: var(--color-main);
+  color: var(--color-light);
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content {
+  min-height: 895px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .image-wrapper {
+  width: 614px;
+  height: 614px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper {
+  padding: 31px;
+  width: 51%;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .treat-title {
+  font-size: 35px;
+  font-family: var(--font-family-one);
+  margin-bottom: 12px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .content {
+  padding-bottom: 0px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper hr {
+  margin: 24px 0px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .book {
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 10px 25px;
+}
+
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.section-footer {
+  background: var(--color-main);
+}
+
+.section-footer .content-wrapper {
+  padding: 92px 0px 40px 0px;
+}
+
+.section-footer .content-wrapper .row-wrapper {
+  -ms-grid-columns: 37% 63%;
+      grid-template-columns: 37% 63%;
+}
+
+.section-footer .content-wrapper .row-wrapper.row-2 {
+  margin-top: 92px;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-item .col-title {
+  font-size: 25px;
+  font-family: var(--font-family-one);
+  color: var(--color-light);
+  font-weight: 600;
+  padding-bottom: 38px;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-item nav {
+  row-gap: 15px;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-item nav a {
+  color: var(--color-light) !important;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-item .content {
+  color: var(--color-light) !important;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-1 .brand-image {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 26px;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-1 .brand-image svg {
+  width: 76px;
+  height: 76px;
+  fill: var(--color-light);
+}
+
+.section-footer .content-wrapper .row-wrapper .col-1 .brand-name-wrapper .brand-name {
+  color: var(--color-light);
+  font-family: var(--font-family-one);
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.section-footer .content-wrapper .row-wrapper .col-3-menu {
+  -ms-grid-columns: (170px)[3];
+      grid-template-columns: repeat(3, 170px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-left: 70px;
+  font-size: 13px;
+}
 /*# sourceMappingURL=style.css.map */
