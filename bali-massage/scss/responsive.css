@@ -191,6 +191,45 @@
 
     /* End of Section Location */
 
+    /* Page Treatments */
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .image-wrapper{
+        width: 100%;
+        height:100%;
+    }
+    /* End of Page Treatments */
+
+    /* Page Contact */
+    .section-contact .content-wrapper .row-contact-detail .col-1 .image-wrapper{
+        width: 100%;
+    }
+
+    .section-contact .content-wrapper .row-contact-detail{
+        row-gap: 50px;
+    }
+
+    .section-contact .content-wrapper .row-contact-detail .col-2{
+        text-align: center;
+        row-gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section-faq{
+        padding: 100px 0px;
+    }
+
+    .section-faq .content-wrapper .row-title-wrapper .faq-wrapper details summary{
+        padding-right: 40px;
+    }
+
+    .section-faq .content-wrapper .row-title-wrapper .faq-wrapper details summary::after{
+        top: 0;
+    }
+
+    .section-faq .content-wrapper .row-title-wrapper .faq-wrapper details p {
+        padding: 0px 40px 50px 0px;
+    }
+    /* End of Page Contact */
+
     /* Footer */
     .section-footer .content-wrapper .row-wrapper.row-1 .col-3-menu .col-menu {
         display: none;
@@ -248,7 +287,7 @@
     /* Banner Home */
     .banner-home {
         height: 100vh;
-        background-image: url('/bali-massage/img/bg-banner-home-mobile.jpeg');
+        background-image: url('/img/bg-banner-home-mobile.jpeg');
         background-position: center;
         background-attachment: scroll;
         background-size: cover;
@@ -368,6 +407,29 @@
     }
 
     /* End of Section Location */
+
+    /* Page Treatments */
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper {
+        padding: 20px;
+        width: 75%;
+    }
+
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .treat-title{
+        font-size: 20px;
+    }
+
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .content p{
+        font-size: 13px;
+    }
+
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab{
+        padding-bottom: 36px;
+    }
+
+    .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks{
+        margin: 10px;
+    }
+    /* End of Page Treatments */
 
     /* Footer */
     .section-footer .content-wrapper{

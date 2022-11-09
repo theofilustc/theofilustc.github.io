@@ -1,3 +1,124 @@
-<h1>
-    FAQ PAGE
-</h1>
+<section class="section-contact">
+    <div class="content-wrapper w-75">
+        <div class="row-wrapper row-title-wrapper center-text">
+            <h2 class="page-title row-title-50 row-title m-row-title-30">CONTACT US</h2>
+            <p class="mg-side-auto content w-65 tbl-w-100">I'm a paragraph. Click here to add your own text and edit me.
+                It’s easy. Just click
+                “Edit
+                Text” or double click me to add your own content and make changes to the font. Feel free to drag and
+                drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users
+                know a little more about you. <br>
+                <br> This is a great space to write a long text about your company and your services. You can use this
+                space
+                to go into a little more detail about your company. Talk about your team and what services you provide.
+                Tell your visitors the story of how you came up with the idea for your business and what makes you
+                different from your competitors. Make your company stand out and show your visitors who you are.</p>
+        </div>
+
+        <div class="row-wrapper row-contact-detail d-grid grid-double-max-content tbl-gr-col-single ">
+            <div class="col-1">
+                <div class="image-wrapper">
+                    <img src="/img/contact-image.jpeg" alt="Contact Image">
+                </div>
+            </div>
+            <div class="col-2 d-grid">
+                <h3 class="col-title">Contact Info</h3>
+                <div class="phone-detail detail-wrapper">
+                    <p class="detail-title">Telephone</p>
+                    <a class="detail-content" href="tel:1234567890">123-456-7890</a>
+                </div>
+                <div class="mail-detail detail-wrapper">
+                    <p class="detail-title">Email</p>
+                    <a class="detail-content" href="mailto:info@mysite.com">info@mysite.com</a>
+                </div>
+                <div class="address-detail detail-wrapper">
+                    <p class="detail-title">Address</p>
+                    <a class="detail-content" href="maps.google.com">500 Terry Francois Street,<br> San Francisco, CA
+                        94158</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="google-maps">
+    <div class="no-wrapper">
+        <div class="row-wrapper row-maps">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=500%20Terry%20Francois%20Street,%20San%20Francisco,%20CA%2094158&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 100%;
+                        }
+                    </style>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 100%;
+                            filter: grayscale(100%);
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-faq">
+    <div class="content-wrapper w-75">
+        <div class="row-wrapper row-title-wrapper">
+            <h2 class="page-title row-title-50 row-title m-row-title-30">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-wrapper">
+                <details class="faq-item pos-relative" open>
+                    <summary>What does LOREM mean?</summary>
+                    <p>‘Lorem ipsum dolor sit amet, consectetur adipisici elit…’ (complete text) is dummy text that is not
+                    meant to mean anything. It is used as a placeholder in magazine layouts, for example, in order to
+                    give an impression of the finished document. The text is intentionally unintelligible so that the
+                    viewer is not distracted by the content. The language is not real Latin and even the first word
+                    ‘Lorem’ does not exist. It is said that the lorem ipsum text has been common among typesetters since
+                    the 16th century.</p>
+                </details>
+
+                <details class="faq-item pos-relative">
+                    <summary>Where can I subscribe to your newsletter?</summary>
+                    <p>We often send out our newsletter with news and great offers. We will never disclose your data to
+                    third parties and you can unsubscribe from the newsletter at any time</p>
+                </details>
+
+                <details class="faq-item pos-relative">
+                    <summary>Where can in edit my address?</summary>
+                    <p>If you created a new account after or while ordering you can edit both addresses (for billing and
+                    shipping) in your customer account</p>
+                </details>
+
+                <details class="faq-item pos-relative">
+                    <summary>Can I order a free copy of a magazine to sample?</summary>
+                    <p>Unfortunately, we’re unable to offer free samples. As a retailer, we buy all magazines from their
+                    publishers at the regular trade price. However, you could contact the magazine’s publisher directly
+                    to ask if they can send you a free copy.</p>
+                </details>
+
+                <details class="faq-item pos-relative">
+                    <summary>Do you accept orders via Phone or E-mail?</summary>
+                    <p>No, we are an online shop and we do not take orders via Phone, E-mail or Social Media.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('details').click(function(event) {
+	$('details').not(this).removeAttr("open");
+});
+
+
+</script>

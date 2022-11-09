@@ -41,7 +41,7 @@ body {
 
 // Homepage
 .banner-home {
-    background-image: url('/bali-massage/img/banner-home.jpeg');
+    background-image: url('/img/banner-home.jpeg');
     height: 1000px;
     // background-position: center 20%;
     background-position: center 0%;
@@ -166,7 +166,7 @@ body {
     padding-top: 170px;
 
     .content-wrapper {
-        background-image: url('/bali-massage/img/bg-working-hour.jpeg');
+        background-image: url('/img/bg-working-hour.jpeg');
         margin-right: 0;
         min-height: 590px;
         background-size: cover;
@@ -204,7 +204,7 @@ body {
             padding: 130px 0px;
 
             .row-title-wrapper {
-                margin-bottom: 100px;
+                margin-bottom: 100px!important;
 
                 .row-title {
                     margin-bottom: 30px;
@@ -250,21 +250,25 @@ body {
                     border-radius: 100px;
                     padding: 6px 12px;
                     font-size: 16px;
+                    margin: 0px 2.5px;
+                    transition: all .3s linear;
 
                     &.active,
                     &:hover {
                         background: var(--color-main);
                         color: var(--color-light);
+                        transition: all .3s linear;
                     }
                 }
             }
 
             .tab-content {
                 min-height: 895px;
+
                 .tabcontent {
                     visibility: hidden;
                     opacity: 0;
-                    transition: all 1s linear;
+                    transition: all .5s linear;
                     position: absolute;
                     left: 0;
                     right: 0;
@@ -302,13 +306,17 @@ body {
                                 border-radius: 100px;
                                 padding: 10px 25px;
                             }
+
+                            .price {
+                                padding-bottom: 20px;
+                            }
                         }
                     }
 
                     &.active {
                         visibility: visible;
                         opacity: 1;
-                        transition: all 1s linear;
+                        transition: all .5s linear;
                     }
                 }
             }
@@ -317,6 +325,115 @@ body {
         }
     }
 }
+
+// FAQ Page
+.section-contact {
+    .content-wrapper {
+        .row-title-wrapper {
+            padding-bottom: 110px;
+
+            .page-title {
+                margin: 73px 0px 43px 0px;
+            }
+        }
+
+        .row-contact-detail {
+            column-gap: 53px;
+
+            .col-1 {
+                .image-wrapper {
+                    width: 683px;
+                    height: 600px;
+                }
+            }
+
+            .col-2 {
+                align-content: space-around;
+
+                .col-title {
+                    font-size: 35px;
+                    font-family: var(--font-family-one);
+                }
+
+                .detail-wrapper {
+                    .detail-title {
+                        font-size: 25px;
+                        font-family: var(--font-family-one);
+                        font-weight: 600;
+                        margin: 0px 0px 13px 0px;
+                    }
+
+                    a {
+                        color: var(--color-dark);
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-faq {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    .content-wrapper {
+        .row-title-wrapper {
+            .page-title {
+                margin-bottom: 50px;
+            }
+
+            .faq-wrapper {
+                details {
+                    transition: color 1s ease;
+                    overflow: hidden;
+                    summary {
+                        font-size: 25px;
+                        font-family: var(--font-family-one);
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &::after {
+                            content: "\2b";
+                            font-family: FontAwesome;
+                            font-weight: 100;
+                            font-size: 25px;
+                            position: absolute;
+                            right: 0;
+                            display: inline-block;
+                            transition: transform .5s ease;
+                            // transform: rotate(45deg);
+                        }
+                    }
+
+                    p {
+                        padding: 0px 50px 50px 30px;
+                        margin: 0;
+                        line-height: 1.5em;
+                    }
+                }
+
+                details[open] {
+                    color: var(--color-main);
+                    summary::after {
+                        transform: rotate(45deg);
+                        display: inline-block;
+                        transition: transform .5s ease;
+                    }
+                }
+                details:not([open]){
+                    color: #d1d1d1;
+                }
+            }
+        }
+    }
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
 
 .section-footer {
     background: var(--color-main);

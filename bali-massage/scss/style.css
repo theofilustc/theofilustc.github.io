@@ -46,7 +46,7 @@ body {
 }
 
 .banner-home {
-  background-image: url("/bali-massage/img/banner-home.jpeg");
+  background-image: url("/img/banner-home.jpeg");
   height: 1000px;
   background-position: center 0%;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ body {
 }
 
 .section-opening-hours .content-wrapper {
-  background-image: url("/bali-massage/img/bg-working-hour.jpeg");
+  background-image: url("/img/bg-working-hour.jpeg");
   margin-right: 0;
   min-height: 590px;
   background-size: cover;
@@ -195,7 +195,7 @@ body {
 }
 
 .section-location .content-wrapper .row-wrapper .row-title-wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 
 .section-location .content-wrapper .row-wrapper .row-title-wrapper .row-title {
@@ -231,11 +231,16 @@ body {
   border-radius: 100px;
   padding: 6px 12px;
   font-size: 16px;
+  margin: 0px 2.5px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks.active, .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks:hover {
   background: var(--color-main);
   color: var(--color-light);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content {
@@ -245,8 +250,8 @@ body {
 .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
   position: absolute;
   left: 0;
   right: 0;
@@ -286,11 +291,139 @@ body {
   padding: 10px 25px;
 }
 
+.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .price {
+  padding-bottom: 20px;
+}
+
 .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent.active {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.section-contact .content-wrapper .row-title-wrapper {
+  padding-bottom: 110px;
+}
+
+.section-contact .content-wrapper .row-title-wrapper .page-title {
+  margin: 73px 0px 43px 0px;
+}
+
+.section-contact .content-wrapper .row-contact-detail {
+  -webkit-column-gap: 53px;
+          column-gap: 53px;
+}
+
+.section-contact .content-wrapper .row-contact-detail .col-1 .image-wrapper {
+  width: 683px;
+  height: 600px;
+}
+
+.section-contact .content-wrapper .row-contact-detail .col-2 {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.section-contact .content-wrapper .row-contact-detail .col-2 .col-title {
+  font-size: 35px;
+  font-family: var(--font-family-one);
+}
+
+.section-contact .content-wrapper .row-contact-detail .col-2 .detail-wrapper .detail-title {
+  font-size: 25px;
+  font-family: var(--font-family-one);
+  font-weight: 600;
+  margin: 0px 0px 13px 0px;
+}
+
+.section-contact .content-wrapper .row-contact-detail .col-2 .detail-wrapper a {
+  color: var(--color-dark);
+  font-size: 13px;
+}
+
+.section-faq {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .page-title {
+  margin-bottom: 50px;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details {
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+  overflow: hidden;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details summary {
+  font-size: 25px;
+  font-family: var(--font-family-one);
+  font-weight: 600;
+  padding-bottom: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details summary::after {
+  content: "\2b";
+  font-family: FontAwesome;
+  font-weight: 100;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details p {
+  padding: 0px 50px 50px 30px;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details[open] {
+  color: var(--color-main);
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details[open] summary::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: inline-block;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.section-faq .content-wrapper .row-title-wrapper .faq-wrapper details:not([open]) {
+  color: #d1d1d1;
+}
+
+@-webkit-keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
 
 .section-footer {
