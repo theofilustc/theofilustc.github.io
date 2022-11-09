@@ -65,6 +65,31 @@ img{
     transition: all .4s ease 0s;
 }
 
+.mg-side-auto{
+    margin: 0 auto!important;
+}
+
+.w-75{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.w-65{
+    width: 75%;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.grid-double-max-content{
+    grid-template-columns: repeat(2, max-content);
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 .btn-circle:hover{
     background-color: var(--color-main);
     color: var(--color-light);
@@ -77,10 +102,6 @@ img{
     margin-bottom: 23px;
     line-height: 1em;
     font-weight: 500;
-}
-
-.mg-side-auto{
-    margin: 0 auto!important;
 }
 
 .page-home, .page-treatment, .page-faq{
@@ -102,30 +123,9 @@ img{
     transition: all 1s linear;
 }
 
-.w-75{
-    width: 75%;
-    margin: 0 auto;
-}
-
-.w-65{
-    width: 75%;
-}
-
-.center-text{
-    text-align: center;
-}
-
 .content{
     font-size: 13px;
     color: var(--color-dark);
     margin: 0;
     line-height: 1.6em;
-}
-
-.grid-double-max-content{
-    grid-template-columns: repeat(2, max-content);
-}
-
-.justify-between{
-    justify-content: space-between;
 }
