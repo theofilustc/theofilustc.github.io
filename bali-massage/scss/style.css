@@ -19,12 +19,14 @@ body {
   font-family: var(--font-family-one);
   font-size: 20px;
   font-weight: 500;
+  letter-spacing: 5px;
 }
 
 .header-wrapper .content-wrapper .logo-wrapper .logo span {
   font-family: var(--font-family-two);
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0px;
 }
 
 .header-wrapper .content-wrapper .main-navigation {
@@ -150,7 +152,7 @@ body {
 }
 
 .section-treatment .row-2 .row-image .row-content-wrapper .col-button .button-load-more-wrapper.btn-treat-2 .btn-circle {
-  padding: 81px 30.48px;
+  padding: 81px 49px;
 }
 
 .section-opening-hours {
@@ -176,8 +178,8 @@ body {
 }
 
 .section-opening-hours .content-wrapper .row-wrapper .row-content {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .section-opening-hours .content-wrapper .row-wrapper .row-content .working-day {
