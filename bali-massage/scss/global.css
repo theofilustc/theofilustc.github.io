@@ -1,4 +1,4 @@
-:root{
+:root {
     --font-family-one: 'Cormorant Garamond', serif;
     --font-family-two: 'Montserrat', sans-serif;
     --color-main: #2D5661;
@@ -7,55 +7,62 @@
 }
 
 ::selection {
-    color: var(--color-light)!important;
-    background: var(--color-main)!important;
-  }
+    color: var(--color-light) !important;
+    background: var(--color-main) !important;
+}
 
-html{
+html {
     color: var(--color-main);
     font-family: var(--font-family-two);
     scroll-behavior: smooth;
 }
 
-.content-wrapper{
+.content-wrapper {
     width: 90%;
     margin: 0 auto;
 }
 
 /* CSS MENU and MOBILE MENU */
-.menu-icon, .mobile-menu{
+.menu-icon,
+.mobile-menu {
     display: none;
 }
+
 /* END OF CSS MENU and MOBILE MENU */
 
-.d-grid{
+.d-grid {
     display: grid;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-weight: 600;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.pos-relative{
+.pos-relative {
     position: relative;
 }
 
-.pos-absolute{
+.pos-absolute {
     position: absolute;
 }
 
-.btn-circle{
+.btn-circle {
     color: var(--color-main);
     font-size: 13px;
     text-decoration: none;
@@ -65,32 +72,32 @@ img{
     transition: all .4s ease 0s;
 }
 
-.mg-side-auto{
-    margin: 0 auto!important;
+.mg-side-auto {
+    margin: 0 auto !important;
 }
 
-.w-75{
+.w-75 {
     width: 75%;
     margin: 0 auto;
 }
 
-.w-65{
+.w-65 {
     width: 75%;
 }
 
-.center-text{
+.center-text {
     text-align: center;
 }
 
-.grid-double-max-content{
+.grid-double-max-content {
     grid-template-columns: repeat(2, max-content);
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
-.btn-circle:hover{
+.btn-circle:hover {
     background-color: var(--color-main);
     color: var(--color-light);
     transition: all .4s ease 0s;
@@ -104,14 +111,17 @@ img{
     font-weight: 500;
 }
 
-.page-home, .page-treatment, .page-faq{
+.page-home,
+.page-treatment,
+.page-faq {
     /* visibility: hidden; */
     opacity: 1;
     display: none;
     transition: all 1s linear;
 }
 
-.page-home.active, .page-treatment.active{
+.page-home.active,
+.page-treatment.active {
     /* visibility: visible; */
     opacity: 1;
     display: block;
@@ -123,9 +133,13 @@ img{
     transition: all 1s linear;
 }
 
-.content{
+.content {
     font-size: 13px;
     color: var(--color-dark);
     margin: 0;
     line-height: 1.6em;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
 }
