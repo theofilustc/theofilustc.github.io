@@ -46,6 +46,7 @@
         cursor: pointer;
         transition: 0.2s ease;
         transform: rotate(180deg);
+        background: var(--color-light);
     }
 
     .menu-icon:hover {
