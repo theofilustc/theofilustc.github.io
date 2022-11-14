@@ -1,7 +1,7 @@
 <section class="section-contact">
     <div class="content-wrapper w-75">
         <div class="row-wrapper row-title-wrapper center-text">
-            <h2 class="page-title row-title-50 row-title m-row-title-30">CONTACT US</h2>
+            <h2 class="page-title row-title-50 row-title m-row-title-30 faq-title">CONTACT US</h2>
             <p class="mg-side-auto content w-65 tbl-w-100">I'm a paragraph. Click here to add your own text and edit me.
                 It’s easy. Just click
                 “Edit
@@ -79,31 +79,36 @@
             <div class="faq-wrapper">
                 <details class="faq-item pos-relative" open>
                     <summary>What does LOREM mean?</summary>
-                    <p>‘Lorem ipsum dolor sit amet, consectetur adipisici elit…’ (complete text) is dummy text that is not
-                    meant to mean anything. It is used as a placeholder in magazine layouts, for example, in order to
-                    give an impression of the finished document. The text is intentionally unintelligible so that the
-                    viewer is not distracted by the content. The language is not real Latin and even the first word
-                    ‘Lorem’ does not exist. It is said that the lorem ipsum text has been common among typesetters since
-                    the 16th century.</p>
+                    <p>‘Lorem ipsum dolor sit amet, consectetur adipisici elit…’ (complete text) is dummy text that is
+                        not
+                        meant to mean anything. It is used as a placeholder in magazine layouts, for example, in order
+                        to
+                        give an impression of the finished document. The text is intentionally unintelligible so that
+                        the
+                        viewer is not distracted by the content. The language is not real Latin and even the first word
+                        ‘Lorem’ does not exist. It is said that the lorem ipsum text has been common among typesetters
+                        since
+                        the 16th century.</p>
                 </details>
 
                 <details class="faq-item pos-relative">
                     <summary>Where can I subscribe to your newsletter?</summary>
                     <p>We often send out our newsletter with news and great offers. We will never disclose your data to
-                    third parties and you can unsubscribe from the newsletter at any time</p>
+                        third parties and you can unsubscribe from the newsletter at any time</p>
                 </details>
 
                 <details class="faq-item pos-relative">
                     <summary>Where can in edit my address?</summary>
                     <p>If you created a new account after or while ordering you can edit both addresses (for billing and
-                    shipping) in your customer account</p>
+                        shipping) in your customer account</p>
                 </details>
 
                 <details class="faq-item pos-relative">
                     <summary>Can I order a free copy of a magazine to sample?</summary>
                     <p>Unfortunately, we’re unable to offer free samples. As a retailer, we buy all magazines from their
-                    publishers at the regular trade price. However, you could contact the magazine’s publisher directly
-                    to ask if they can send you a free copy.</p>
+                        publishers at the regular trade price. However, you could contact the magazine’s publisher
+                        directly
+                        to ask if they can send you a free copy.</p>
                 </details>
 
                 <details class="faq-item pos-relative">
@@ -116,9 +121,13 @@
 </section>
 
 <script>
-    $('details').click(function(event) {
-	$('details').not(this).removeAttr("open");
-});
+    gsap.from('.faq-title', {
+        duration: 1,
+        y: -100,
+        opacity: 0
+    });
 
-
+        $('details').click(function (event) {
+        $('details').not(this).removeAttr("open");
+    });
 </script>

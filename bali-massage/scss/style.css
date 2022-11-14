@@ -15,6 +15,10 @@ body {
           align-items: center;
 }
 
+.header-wrapper .content-wrapper a {
+  color: var(--color-main);
+}
+
 .header-wrapper .content-wrapper .logo-wrapper .logo {
   font-family: var(--font-family-one);
   font-size: 20px;
@@ -50,9 +54,8 @@ body {
 .banner-home {
   background-image: url("/bali-massage/img/banner-home.jpeg");
   height: 1000px;
-  background-position: center 0%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .banner-home .content-wrapper .banner-title {
@@ -93,6 +96,11 @@ body {
 
 .section-treatment .row-1 .content-wrapper .col-1 .title-content-wrapper {
   padding: 140px 0px;
+  width: 465px;
+  margin: 0 auto;
+}
+
+.section-treatment .row-1 .content-wrapper .col-1 .content {
   width: 404px;
   margin: 0 auto;
 }
@@ -125,7 +133,7 @@ body {
 }
 
 .section-treatment .row-2 .row-title-content .content {
-  width: 520px;
+  width: 650px;
   margin-left: auto;
 }
 
@@ -168,9 +176,22 @@ body {
       align-content: center;
 }
 
+.section-opening-hours .content-wrapper::after {
+  content: "";
+  background: var(--color-light);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+  z-index: 0;
+}
+
 .section-opening-hours .content-wrapper .row-wrapper {
-  width: 600px;
+  width: 570px;
   margin-left: 120px;
+  z-index: 10;
 }
 
 .section-opening-hours .content-wrapper .row-wrapper .row-title-wrapper {
@@ -213,20 +234,21 @@ body {
   height: 701px;
 }
 
-.section-treatment .content-wrapper .row-wrapper .row-title {
+.page-treatment .section-treatment .content-wrapper .row-wrapper .row-title {
   padding: 73px 0px 20px 0px;
+  width: 50%;
 }
 
-.section-treatment .content-wrapper .row-wrapper .content {
+.page-treatment .section-treatment .content-wrapper .row-wrapper .content {
   margin: 0 auto;
   padding-bottom: 51px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab {
   padding: 60px 0px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks {
   background: var(--color-light);
   color: var(--color-main);
   border: 1px solid var(--color-main);
@@ -238,18 +260,19 @@ body {
   transition: all .3s linear;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks.active, .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks:hover {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks.active, .page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab .tablinks:hover {
   background: var(--color-main);
   color: var(--color-light);
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content {
   min-height: 895px;
+  padding-bottom: 60px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .5s linear;
@@ -261,31 +284,31 @@ body {
   margin-right: auto;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .image-wrapper {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .image-wrapper {
   width: 614px;
   height: 614px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper {
   padding: 31px;
   width: 51%;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .treat-title {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .treat-title {
   font-size: 35px;
   font-family: var(--font-family-one);
   margin-bottom: 12px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .content {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .content {
   padding-bottom: 0px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper hr {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper hr {
   margin: 24px 0px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .book {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .book {
   border: 1px solid var(--color-main);
   color: var(--color-main);
   font-size: 16px;
@@ -293,11 +316,11 @@ body {
   padding: 10px 25px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .price {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent .treat-item-wrapper .content-wrapper .price {
   padding-bottom: 20px;
 }
 
-.section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent.active {
+.page-treatment .section-treatment .content-wrapper .row-treatment-item-wrapper .tab-content .tabcontent.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: all .5s linear;

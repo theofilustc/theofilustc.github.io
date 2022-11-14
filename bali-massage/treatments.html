@@ -1,11 +1,13 @@
 <div class="section-treatment">
     <div class="content-wrapper w-75">
         <div class="row-wrapper row-title-wrapper center-text">
-            <h2 class="page-title row-title-50 row-title m-row-title-30">BALI OUTCALL MASSAGE PACKAGES</h2>
-            <p class="content w-65 tbl-w-100">
+            <h2 class="page-title row-title-50 row-title m-row-title-30 mg-side-auto tbl-w-100 gsap-effect">BALI OUTCALL
+                MASSAGE PACKAGES</h2>
+            <p class="content w-65 tbl-w-100 mg-side-auto">
                 Our Bali Outcall Massage packages allows you to drift off into an undisturbed blissful state, slowly
                 arousing the energy within your body in a sensual and eroctic way. If you are looking for a erotic and
-                sensual experience our outcall massage packages below is for you. If you have additional requests or desires, feel free to message us and we’ll do everything we can
+                sensual experience our outcall massage packages below is for you. If you have additional requests or
+                desires, feel free to message us and we’ll do everything we can
                 to accommodate your wishes. </p>
         </div>
 
@@ -20,7 +22,7 @@
             <div class="tab-content">
                 <div id="massages" class="tabcontent btn-treat-1 active">
                     <div class="treat-item-wrapper">
-                        <div class="image-wrapper mg-side-auto">
+                        <div class="image-wrapper mg-side-auto responsive-image-wrapper">
                             <img src="/bali-massage/img/massage-image-1.jpeg" alt="Treatment Image">
                         </div>
                         <div class="content-wrapper center-text">
@@ -36,7 +38,7 @@
 
                 <div id="scrubs" class="tabcontent btn-treat-2">
                     <div class="treat-item-wrapper">
-                        <div class="image-wrapper mg-side-auto">
+                        <div class="image-wrapper mg-side-auto responsive-image-wrapper">
                             <img src="/bali-massage/img/scrub-image-1.jpeg" alt="Treatment Image">
                         </div>
                         <div class="content-wrapper center-text">
@@ -52,7 +54,7 @@
 
                 <div id="body-treatments" class="tabcontent btn-treat-3">
                     <div class="treat-item-wrapper">
-                        <div class="image-wrapper mg-side-auto">
+                        <div class="image-wrapper mg-side-auto responsive-image-wrapper">
                             <img src="/bali-massage/img/body-treat-image-1.jpeg" alt="Treatment Image">
                         </div>
                         <div class="content-wrapper center-text">
@@ -65,30 +67,64 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="special-service" class="tabcontent btn-treat-4">
+                    <div class="treat-item-wrapper">
+                        <div class="image-wrapper mg-side-auto responsive-image-wrapper">
+                            <img src="/img/special-service.jpg" alt="Treatment Image">
+                        </div>
+                        <div class="content-wrapper center-text">
+                            <h3 class="treat-title">Full Body Massage</h3>
+                            <p class="content">Use this area to describe one of your services.</p>
+                            <hr>
+                            <p class="duration">1 hr 30 min</p>
+                            <p class="price">$225</p>
+                            <a href="" class="book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    $(".btn-treat-1").click(function () {
-        // $(this).toggleClass("active");
-        $(".btn-treat-1").addClass("active");
-        $(".btn-treat-2").removeClass("active");
-        $(".btn-treat-3").removeClass("active");
-    });
-
-    $(".btn-treat-2").click(function () {
-        // $(this).toggleClass("active");
-        $(".btn-treat-2").addClass("active");
-        $(".btn-treat-1").removeClass("active");
-        $(".btn-treat-3").removeClass("active");
-    });
-
-    $(".btn-treat-3").click(function () {
-        // $(this).toggleClass("active");
-        $(".btn-treat-3").addClass("active");
-        $(".btn-treat-2").removeClass("active");
-        $(".btn-treat-1").removeClass("active");
-    });
-</script>
+    <script>
+        gsap.from('.gsap-effect', {
+            duration: 1,
+            y: -100,
+            opacity: 0
+        });
+    </script>
+    
+    <script>
+        $(".btn-treat-1").click(function () {
+            // $(this).toggleClass("active");
+            $(".btn-treat-1").addClass("active");
+            $(".btn-treat-2").removeClass("active");
+            $(".btn-treat-3").removeClass("active");
+            $(".btn-treat-4").removeClass("active");
+        });
+    
+        $(".btn-treat-2").click(function () {
+            // $(this).toggleClass("active");
+            $(".btn-treat-2").addClass("active");
+            $(".btn-treat-1").removeClass("active");
+            $(".btn-treat-3").removeClass("active");
+            $(".btn-treat-4").removeClass("active");
+        });
+    
+        $(".btn-treat-3").click(function () {
+            // $(this).toggleClass("active");
+            $(".btn-treat-3").addClass("active");
+            $(".btn-treat-2").removeClass("active");
+            $(".btn-treat-1").removeClass("active");
+            $(".btn-treat-4").removeClass("active");
+        });
+    
+        $(".btn-treat-4").click(function () {
+            // $(this).toggleClass("active");
+            $(".btn-treat-4").addClass("active");
+            $(".btn-treat-2").removeClass("active");
+            $(".btn-treat-1").removeClass("active");
+            $(".btn-treat-3").removeClass("active");
+        });
+    </script>

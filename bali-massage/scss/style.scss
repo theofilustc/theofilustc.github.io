@@ -9,6 +9,10 @@ body {
         height: 120px;
         align-items: center;
 
+        a {
+            color: var(--color-main);
+        }
+
         .logo-wrapper {
             .logo {
                 font-family: var(--font-family-one);
@@ -44,9 +48,10 @@ body {
 .banner-home {
     background-image: url('/bali-massage/img/banner-home.jpeg');
     height: 1000px;
-    background-position: center 0%;
+    // background-position: center 20%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     .content-wrapper {
         .banner-title {
@@ -90,6 +95,11 @@ body {
             .col-1 {
                 .title-content-wrapper {
                     padding: 140px 0px;
+                    width: 465px;
+                    margin: 0 auto;
+                }
+
+                .content {
                     width: 404px;
                     margin: 0 auto;
                 }
@@ -127,7 +137,7 @@ body {
             padding-bottom: 195px;
 
             .content {
-                width: 520px;
+                width: 650px;
                 margin-left: auto;
             }
         }
@@ -171,9 +181,22 @@ body {
         background-size: cover;
         align-content: center;
 
+        &::after {
+            content: "";
+            background: var(--color-light);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.4;
+            z-index: 0;
+        }
+
         .row-wrapper {
-            width: 600px;
+            width: 570px;
             margin-left: 120px;
+            z-index: 10;
 
             .row-title-wrapper {
                 padding-bottom: 50px;
@@ -223,102 +246,106 @@ body {
 }
 
 // Treatment Page
-.section-treatment {
-    .content-wrapper {
-        .row-wrapper {
-            .row-title {
-                padding: 73px 0px 20px 0px;
+.page-treatment {
+    .section-treatment {
+        .content-wrapper {
+            .row-wrapper {
+                .row-title {
+                    padding: 73px 0px 20px 0px;
+                    width: 50%;
+                }
+
+                .content {
+                    margin: 0 auto;
+                    padding-bottom: 51px;
+                }
             }
 
-            .content {
-                margin: 0 auto;
-                padding-bottom: 51px;
-            }
-        }
+            .row-treatment-item-wrapper {
+                .tab {
+                    padding: 60px 0px;
 
-        .row-treatment-item-wrapper {
-            .tab {
-                padding: 60px 0px;
-
-                .tablinks {
-                    background: var(--color-light);
-                    color: var(--color-main);
-                    border: 1px solid var(--color-main);
-                    border-radius: 100px;
-                    padding: 6px 12px;
-                    font-size: 16px;
-                    margin: 0px 2.5px;
-                    transition: all .3s linear;
-
-                    &.active,
-                    &:hover {
-                        background: var(--color-main);
-                        color: var(--color-light);
+                    .tablinks {
+                        background: var(--color-light);
+                        color: var(--color-main);
+                        border: 1px solid var(--color-main);
+                        border-radius: 100px;
+                        padding: 6px 12px;
+                        font-size: 16px;
+                        margin: 0px 2.5px;
                         transition: all .3s linear;
+
+                        &.active,
+                        &:hover {
+                            background: var(--color-main);
+                            color: var(--color-light);
+                            transition: all .3s linear;
+                        }
                     }
                 }
-            }
 
-            .tab-content {
-                min-height: 895px;
+                .tab-content {
+                    min-height: 895px;
+                    padding-bottom: 60px;
 
-                .tabcontent {
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: all .5s linear;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    .treat-item-wrapper {
-                        .image-wrapper {
-                            width: 614px;
-                            height: 614px;
-                        }
-
-                        .content-wrapper {
-                            padding: 31px;
-                            width: 51%;
-
-                            .treat-title {
-                                font-size: 35px;
-                                font-family: var(--font-family-one);
-                                margin-bottom: 12px;
-                            }
-
-                            .content {
-                                padding-bottom: 0px;
-                            }
-
-                            hr {
-                                margin: 24px 0px;
-                            }
-
-                            .book {
-                                border: 1px solid var(--color-main);
-                                color: var(--color-main);
-                                font-size: 16px;
-                                border-radius: 100px;
-                                padding: 10px 25px;
-                            }
-
-                            .price {
-                                padding-bottom: 20px;
-                            }
-                        }
-                    }
-
-                    &.active {
-                        visibility: visible;
-                        opacity: 1;
+                    .tabcontent {
+                        visibility: hidden;
+                        opacity: 0;
                         transition: all .5s linear;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        .treat-item-wrapper {
+                            .image-wrapper {
+                                width: 614px;
+                                height: 614px;
+                            }
+
+                            .content-wrapper {
+                                padding: 31px;
+                                width: 51%;
+
+                                .treat-title {
+                                    font-size: 35px;
+                                    font-family: var(--font-family-one);
+                                    margin-bottom: 12px;
+                                }
+
+                                .content {
+                                    padding-bottom: 0px;
+                                }
+
+                                hr {
+                                    margin: 24px 0px;
+                                }
+
+                                .book {
+                                    border: 1px solid var(--color-main);
+                                    color: var(--color-main);
+                                    font-size: 16px;
+                                    border-radius: 100px;
+                                    padding: 10px 25px;
+                                }
+
+                                .price {
+                                    padding-bottom: 20px;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: all .5s linear;
+                        }
                     }
                 }
+
+
             }
-
-
         }
     }
 }
